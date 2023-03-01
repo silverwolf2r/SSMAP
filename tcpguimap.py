@@ -11,9 +11,7 @@ from gmplot import *
 #Assign global variables
 global srclo
 global srcla
-global lat
-global lon
-global yaddr
+
 
 
 #use my geoip database
@@ -62,9 +60,6 @@ def plotpoint(lat, lon, yaddr):
 	gmap.scatter(lat, lon, '#FF0000',size = 50, title = yaddr, marker = True )
 	gmap.apikey = "PUT_YOUR_API_KEY_HERE"
 	gmap.draw( "/home/User/Tcpmap/Map.html" )
-
-	placeholder = 3
-	#print("plotting points did not work :( ")
 
 
 while x < 3:
